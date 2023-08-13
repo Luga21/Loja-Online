@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/basket.png" />
+
+    <title>Minha Loja Virtual</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- modelos de produtos na lista e no carrinho -->
+    <div class="models">
+
+        <!-- produtos na lista -->
+        <div class="product-item">
+            <a href="">
+                <div class="product-item--img"><img src="" /></div>
+                <div class="product-item--add">+</div>
+            </a>
+            <div class="product-item--price">R$ --</div>
+            <div class="product-item--name">--</div>
+            <div class="product-item--desc">--</div>
+        </div>
+
+        <!-- produtos no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        <h1>Minha loja</h1>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <!-- /menu-openner -->
+
+    <!-- conteudo principal -->
+    <main>
+        
+        <h2>Produtos</h2>
+
+        <div class="product-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seus Produtos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .produtoWindowArea -->
+    <div class="productWindowArea">
+        <div class="productWindowBody">
+            <div class="productInfo--cancelMobileButton">Voltar</div>
+            <div class="productBig">
+                <img src="" />
+            </div>
+            <div class="productInfo">
+                <h1>--</h1>
+                <div class="productInfo--desc">--</div>
+                <div class="productInfo--sizearea">
+                    <div class="productInfo--sector">Estado do Produto</div>
+                    <div class="productInfo--sizes">
+                        <div data-key="P" class="productInfo--size">Muito usado <span>--</span></div>
+                        <div data-key="M" class="productInfo--size">Usado <span>--</span></div>
+                        <div data-key="G" class="productInfo--size selected">Novo <span>--</span></div>
+                    </div>
+                </div>
+                <div class="productInfo--pricearea">
+                    <div class="productInfo--sector">Preço</div>
+                    <div class="productInfo--price">
+                        <div class="productInfo--actualPrice">R$ --</div>
+                        <div class="productInfo--qtarea">
+                            <button class="productInfo--qtmenos">-</button>
+                            <div class="productInfo--qt">1</div>
+                            <button class="productInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productInfo--addButton">Adicionar ao carrinho</div>
+                <div class="productInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .productWindowArea -->
+
+    <script src="produtos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
